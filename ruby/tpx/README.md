@@ -10,11 +10,11 @@ This is the open source Ruby gem developed by Lookingglass Cyber Solutions.
 
 You must use an installed gem to use the validator and parser tools.
 
-    gem install open_tpx
+    gem install opentpx
 
 To validate a file in your own scripts:
 
-    require 'open_tpx'
+    require 'opentpx'
     TPX_2_2::Validator.validate_file! "path/to/my/tpx.json"
 
 Or use the `opentpx_tools` executable:
