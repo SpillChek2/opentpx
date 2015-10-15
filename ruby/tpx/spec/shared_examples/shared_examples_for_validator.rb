@@ -85,7 +85,7 @@ JSON
       let(:valid_tpx_2_2_data) do
         <<JSON
 {
-  "schema_version_s":"2.1.5",
+  "schema_version_s":"2.2.0",
   "provider_s":"testprovider.com",
   "list_name_s":"Test List Name",
   "source_observable_s":"TestSource",
@@ -134,7 +134,7 @@ JSON
       let(:valid_tpx_2_2_data) do
         <<JSON
 {
-  "schema_version_s":"2.1.5",
+  "schema_version_s":"2.2.0",
   "provider_s":"testprovider.com",
   "list_name_s":"Test List Name",
   "source_observable_s":"TestSource",

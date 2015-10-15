@@ -10,7 +10,7 @@ After cloning the repository, create a [virtualenv](https://virtualenv.pypa.io/e
 Next, install the dependencies for the package by moving to the python/ directory and running:
 
     virtualenv -p python2.7 env/
-    source env/bin/activate
+    source env/bin/activate           # for Windows, run this instead:  env\Scripts\activate
     pip install -r requirements.txt
 
 Then the module can be imported into any python script with:
@@ -25,7 +25,7 @@ A basic script using the tpxvalidate package, ```validate.py``` is included. By 
     Usage: python validate.py [OPTIONS] TPX_FILE
 
     Options:
-      -v, --version [2.1|2.2]  TPX version to use.
+      -v, --version [2.2]  TPX version to use.
       -s, --schema PATH        Path to external schema file.
       --help                   Show this message and exit.
 

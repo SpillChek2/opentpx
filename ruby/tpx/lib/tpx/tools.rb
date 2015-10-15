@@ -61,7 +61,7 @@ module TPX
         arg_name: 'VERSION',
         type: String,
         desc: "The version of tpx to validate the file against. Possible" \
-        " values: '2.1', '2.2'"
+        " values: '2.2'"
 
       c.action do |global_options, options, args|
         self.quiet = global_options[:quiet]

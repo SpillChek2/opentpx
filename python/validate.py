@@ -1,4 +1,3 @@
-from tpxvalidate import TPX_2_1
 from tpxvalidate import TPX_2_2
 
 import click
@@ -17,11 +16,7 @@ def validate(tpx_file, version, schema, quiet):
             schema_file = open(os.path.join(os.path.dirname(__file__), schema), 'rb')
             schema_json = json.loads(schema_file.read().decode())
 
-        if version == '2.1':
-            TPXExchange = TPX_2_1.Exchange(tpx_file)
-            if not schema: schema_json = TPX_2_1.schema_json
-
-        elif version == '2.2':
+        if version == '2.2':
             TPXExchange = TPX_2_2.Exchange(tpx_file)
             if not schema: schema_json = TPX_2_2.schema_json
         else:

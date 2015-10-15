@@ -1,5 +1,5 @@
 {
-  "schema_version_s":"2.1.5",
+  "schema_version_s":"2.2.0",
   "provider_s":"malwaredomainlist.com",
   "list_name_s":"Mdl Updates Csv",
   "source_observable_s":"MdlUpdatesCsv",

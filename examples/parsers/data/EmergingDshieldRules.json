@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "schema_version_s":"2.1.6",
+  "schema_version_s":"2.2.0",
   "element_observable_c_array":[
     {
       "subject_cidrv4_s":"61.240.144.0/24",
