@@ -6,13 +6,13 @@ $LOAD_PATH.unshift(bin) unless $LOAD_PATH.include?(bin)
 require 'tpx/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'tpx'
+  spec.name          = 'opentpx'
   spec.version       = TPX::VERSION
   spec.authors       = ['LookingGlass']
   spec.email         = ['support@lgscout.com']
-  spec.summary       = %q{Threat Partner Exchange (TPX)}
+  spec.summary       = %q{Open Threat Partner Exchange (OpenTPX)}
   spec.description   = %q{An open-source format and tools for exchanging threat intelligence data.  This is a JSON-based format that allows sharing of data between partner organizations.}
-  spec.homepage      = 'https://github.com/Lookingglass/tpx'
+  spec.homepage      = 'http://www.opentpx.org'
   spec.license       = %q{The Apache License, Version 2.0. See LICENSE.txt}
 
   spec.files         = Dir.glob(File.join('lib','**','*')) + %w(LICENSE.txt README.md)
