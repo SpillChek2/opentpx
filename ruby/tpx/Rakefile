@@ -5,34 +5,9 @@ require 'rake'
 require 'rake/clean'
 CLEAN.include('pkg')
 
-# Below is to override `rake release` to point to our repo
-# lg-package is old 'n crufty and depends on bundler 1.6.4
-Rake::TaskManager.class_eval do
-  def remove_task(task_name)
-    @tasks.delete(task_name.to_s)
-  end
-end
-def remove_task(task_name)
-  Rake.application.remove_task(task_name)
-end
-# So we don't publish to rubygems.org
-remove_task :release
-# # Ahhhh yeah
-# desc "Release to our geminabox (https://gems.lgscout.com/)"
-# task :release => [:build] do |t|
-#   spec = Gem::Specification::load(Dir.glob("*.gemspec").first)
-#   system "gem inabox pkg/tpx-#{spec.version}.gem -g 'https://gems.lgscout.com/'"
-# end
-# Ahhhh yeah
-desc "Release to our geminabox (http://gems.corp.lgscout.com/)"
-task :release => [:build] do |t|
-  spec = Gem::Specification::load(Dir.glob("*.gemspec").first)
-  system "gem inabox pkg/tpx-#{spec.version}.gem -g 'http://gems.corp.lgscout.com/'"
-end
-
 task :default => 'tpx:spec'
 
-namespace:tpx do
+namespace:opentpx do
   require 'bundler'
   require 'rake'
   require 'rspec/core/rake_task'
