@@ -5,7 +5,7 @@ require 'rake'
 require 'rake/clean'
 CLEAN.include('pkg')
 
-task :default => 'tpx:spec'
+task :default => 'opentpx:spec'
 
 namespace:opentpx do
   require 'bundler'
